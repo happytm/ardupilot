@@ -83,10 +83,11 @@ private:
 
     // these are bitmask indexes for TMODE_FLAGS
     enum toy_flags {
-        FLAG_THR_DISARM     = 1<<0,  // disarm on low throttle
-        FLAG_THR_ARM        = 1<<1,  // arm on high throttle
-        FLAG_UPGRADE_LOITER = 1<<2,  // auto upgrade from ALT_HOLD to LOITER
-        FLAG_RTL_CANCEL     = 1<<3,  // cancel RTL on large stick input
+        FLAG_THR_DISARM        = 1<<0,  // disarm on low throttle
+        FLAG_THR_ARM           = 1<<1,  // arm on high throttle
+        FLAG_UPGRADE_LOITER    = 1<<2,  // auto upgrade from ALT_HOLD to LOITER
+        FLAG_RTL_CANCEL        = 1<<3,  // cancel RTL on large stick input
+        FLAG_FORCE_DISARM_RF   = 1<<4,  // force disarm on radio failsafe
     };
 
     enum blink_patterns {
